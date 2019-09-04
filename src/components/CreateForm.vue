@@ -22,6 +22,11 @@
                 this.$store.commit("handleCreateTodo",this.inputtingItem);
 
             }
+        },
+        created: function(){
+            this.$store.dispatch('createTodos');
+            this.$store.dispatch('updateTodos');
+
         }
     }
 </script>

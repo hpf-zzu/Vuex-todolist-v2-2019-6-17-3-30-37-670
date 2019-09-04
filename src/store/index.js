@@ -73,14 +73,14 @@ export default {
 
         },
         updateTodos(context){
-            const url = "http://5b4dcb2aec112500143a2311.mockapi.io/api/todos/220";
+            const url = "http://5b4dcb2aec112500143a2311.mockapi.io/api/todos/132";
             axios.put(url,{
-                id: 115,
+                id: 132,
                 content: "playing222222",
                 status: "active"
             }).then(function(response){
-                content.dispatch("creatTodos")
-            }).catch(function(erroe){
+                content.dispatch("createTodos")
+            }).catch(function(error){
                 console.log(error.response);
             })
 
